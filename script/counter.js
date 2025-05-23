@@ -47,11 +47,11 @@
       if (parseInt(assignedCount.textContent) === 0) {
         alert("Congrats!! You have completed all the current tasks");
       }
-    });
-  });
+            });
+         });
 
  
-  clearBtn.addEventListener("click", () => {
+    clearBtn.addEventListener("click", () => {
     history.innerHTML = "";
-  });
+    });
 
