@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+
+      <!-- DaisyUi + Tailwind css CDN-->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="body">
+    <!-- navbar starts here -->
+     <nav class="navbar bg-base-300  mb-4 rounded-xl px-6 py-3 items-center justify-between w-11/12 mx-auto mt-4">
+        <div >
+            <div class="logo flex items-center gap-2 ">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-lg">Dev<span class="font-bold">Board</span></h1>
+            </div>
+           
+        </div>
+        <div>
+            <div class="flex items-center justify-between gap-4">
+                <div class="flex gap-2">                    
+                        <img src="assets/checkbox.png" alt=""> 
+                        <h1 id="completedCount" class="font-bold">23</h1>                    
+                </div>
+                <button id="colorBtn" > 
+                    <img src="assets/theme-btn.png" alt="">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <section class=" flex   justify-between w-11/12 mx-auto mt-4 gap-2 ">
+        <section class=" bg-base-300  rounded-xl px-6 py-3 w-9/12">
+            <div class="flex gap-2">
+                <div class="w-3/12 rounded-xl p-6 bg-white flex gap-4 items-center">
+                    <div>
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Task Assigned</h1>
+                        <h1  id="assignedCount"  class="font-bold text-xl">06</h1>
+                    </div>
+                </div>
+                <div class="w-6/12 rounded-xl p-6 bg-white bg-gradient-to-r from-blue-400 to-blue-200">
+                    <a href="index2.html" class="flex gap-4 items-center ">
+                        <img src="assets/board.png" alt="">
+                    <h1 class="text-xl text-white font-bold">Discover Something <br> New Today!</h1>
+                    </a>
+                </div>
+                <div class="w-3/12 rounded-xl p-6 bg-white flex gap-4 items-center">
+                      <div>
+                        <img src="assets/calender.png" alt="">
+                    </div>
+                    <div>
+                        
+                        <p id="dateTime" class="text-lg font-bold"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- card section -->
+            <div id="taskList"  class="mt-6 grid  gap-2  grid-cols-3 ">
+
+                <div class="card bg-base-100 shadow-xl p-2">
+                    <div class="card-body">
+                        <p class="bg-gray-100 p-2 rounded-xl w-4/12">ShopEase</p>
+                        <h2 class="card-title text-gray-600">Fix Mobile Button Issue </h2>
+                        <p class="text-gray-400 bg-gray-100 rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements</p>
+                        
+
+                         <div class="flex gap-4">
+                        <div class="text-gray-600">
+                            <h1>Deadline</h1>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button class="btn bg-gradient-to-r from-blue-400 to-blue-200  mt-4 w-fit completeBtn">Completed</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl p-2">
+                    <div class="card-body">
+                        <p class="bg-gray-100 p-2 rounded-xl w-4/12">CloudSync</p>
+                        <h2 class="card-title text-gray-600">Add Dark Mode</h2>
+                        <p class="text-gray-400 bg-gray-100 rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements</p>
+                        
+
+                         <div class="flex gap-4">
+                        <div class="text-gray-600">
+                            <h1>Deadline</h1>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button class="btn bg-gradient-to-r from-blue-400 to-blue-200  mt-4 w-fit completeBtn">Completed</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl p-2">
+                    <div class="card-body">
+                        <p class="bg-gray-100 p-2 rounded-xl w-4/12">SwiftPay</p>
+                        <h2 class="card-title text-gray-600">Optimize  Home page  </h2>
+                        <p class="text-gray-400 bg-gray-100 rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements</p>
+                        
+
+                         <div class="flex gap-4">
+                        <div class="text-gray-600">
+                            <h1>Deadline</h1>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button class="btn bg-gradient-to-r from-blue-400 to-blue-200  mt-4 w-fit completeBtn">Completed</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl p-2">
+                    <div class="card-body">
+                        <p class="bg-gray-100 p-2 rounded-xl w-4/12">Meta</p>
+                        <h2 class="card-title text-gray-600"> Add new emoji 🤲</h2>
+                        <p class="text-gray-400 bg-gray-100 rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements</p>
+                        
+
+                         <div class="flex gap-4">
+                        <div class="text-gray-600">
+                            <h1>Deadline</h1>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button class="btn bg-gradient-to-r from-blue-400 to-blue-200  mt-4 w-fit completeBtn">Completed</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl p-2">
+                    <div class="card-body">
+                        <p class="bg-gray-100 p-2 rounded-xl w-4/12">Google LLC</p>
+                        <h2 class="card-title text-gray-600">Integrate OpenAI API  </h2>
+                        <p class="text-gray-400 bg-gray-100 rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements</p>
+                        
+
+                         <div class="flex gap-4">
+                        <div class="text-gray-600">
+                            <h1>Deadline</h1>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button class="btn bg-gradient-to-r from-blue-400 to-blue-200  mt-4 w-fit completeBtn">Completed</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl p-2">
+                    <div class="card-body">
+                        <p class="bg-gray-100 p-2 rounded-xl w-4/12">Glassdoar</p>
+                        <h2 class="card-title text-gray-600">Improve Job searching </h2>
+                        <p class="text-gray-400 bg-gray-100 rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements</p>
+                        
+
+                         <div class="flex gap-4">
+                        <div class="text-gray-600">
+                            <h1>Deadline</h1>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button class="btn bg-gradient-to-r from-blue-400 to-blue-200  mt-4 w-fit completeBtn">Completed</button>
+                    </div>
+                    </div>
+                </div>
+
+
+
+
+             
+                
+            </div>
+        </section>
+        <section class=" bg-base-300   rounded-xl px-6 py-3 w-3/12">
+            <div class="flex items-center justify-center gap-4 mt-4 ">
+                <img src="assets/activity.png" alt="">
+                <p>Activity Log</p>
+            </div>
+           <div class="flex justify-center">
+             <button id="clearBtn" class="btn bg-gradient-to-r from-blue-400 to-blue-200  mt-4">Clear History</button>
+           </div>
+            <div  id="history" class="space-y-4 mt-4"></div>
+
+        </section>
+
+    </section>
+
+    
+    <script src="/script/colourSwitcher.js"></script>
+    <script src="/script/counter.js"></script>
+</body>
+</html>
