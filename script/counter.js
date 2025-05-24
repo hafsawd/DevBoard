@@ -27,21 +27,23 @@
         completedCount.textContent = completedNum + 1;
       }
 
+      // button disable
+      btn.disabled = true;
+
+      btn.classList.add("btn-disabled");
+
       // Get task title
       const taskCard = btn.closest(".card");
       const title = taskCard.querySelector(".card-title").textContent;
       const today = new Date().toLocaleDateString();
 
       // Add to history
-      const msg = document.createElement("p");
-      msg.className = "p-2 bg-blue-100 rounded";
-      msg.textContent = `You have complete the task ${title} on ${today}`;
-      history.appendChild(msg);
+      const text = document.createElement("p");
+      text.className = "p-2 bg-blue-100 rounded";
+      text.textContent = `You have complete the task ${title} on ${today}`;
+      history.appendChild(text);
 
-      // button disable
-      btn.disabled = true;
-
-      btn.classList.add("btn-disabled");
+      
 
       //final alert
       if (parseInt(assignedCount.textContent) === 0) {
